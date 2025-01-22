@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  color: #2F494A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.divider {
+  height: 1px;
+  background: #708f70;
+  width: 75vw;
+  margin: 100px auto 20px;
+}
+
+a {
+  color: #708f70;
+  text-decoration: none;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav img {
+  width: 200px;
+  padding: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  font-weight: 100;
+  color: #819b80;
+  margin: 0 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusted for better spacing between elements */
+  text-align: center;
+  padding: 10rem 20px; /* Reduced padding for better balance */
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 20px 0; /* Increased margin for better spacing */
+}
+
+.hero p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.hero-image {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    background-color: #acacac;
+    padding: 2rem 0;
+  }
+
+  .hero-text {
+    max-width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-image {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto; /* Centered image on smaller screens */
+  }
+}
+
+.features-section {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* Increased width for better spacing */
+  margin-left: auto;
+  margin-right: auto; /* Centers the section */
+}
+
+.feature {
+  display: flex;
+  align-items: center; /* Vertically aligns the items */
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 40px 0; /* Adjusted padding for better visual spacing */
+  gap: 40px; /* Space between text and image */
+}
+
+.feature-text {
+  flex: 1;
+  padding-right: 20px; /* Adjusted padding for better separation */
+  display: flex; /* Makes it a flex container */
+  flex-direction: column; /* Aligns text vertically */
+  justify-content: center; /* Centers the text vertically */
+  text-align: center; /* Centers text horizontally */
+}
+
+.feature-text h2 {
+  margin-bottom: 15px; /* Adds spacing between the title and the paragraph */
+}
+
+.feature-text p {
+  max-width: 25rem; /* Ensures consistent width for text */
+  margin-left: auto; /* Centers paragraph horizontally */
+  margin-right: auto; /* Centers paragraph horizontally */
+  text-align: left;
+}
+
+.feature-image {
+  flex: 1;
+  text-align: center; /* Centers images horizontally */
+}
+
+.feature-image img {
+  max-width: 100%; /* Prevents images from overflowing */
+  height: auto;
+  border-radius: 5px; /* Optional: adds rounded corners for a polished look */
+}
+
+/* Adjustments for spacing */
+.feature:nth-child(1) .feature-text p {
+  margin-bottom: 0; /* Reduces space between text and image in "Natural Supplements" */
+}
+
+.feature:nth-child(2) .feature-text p {
+  margin-bottom: 20px; /* Adds space between text and image in "Functional Blood Analysis" */
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    width: 90%; /* Makes the section more fluid on smaller screens */
+  }
+
+  .feature {
+    flex-direction: column; /* Stacks the text and image vertically */
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .feature-text {
+    text-align: center; /* Centers text on mobile */
+    padding-right: 0;
+    margin-bottom: 20px; /* Adds space between text and image on mobile */
+  }
+
+  .feature-image {
+    max-width: 100%; /* Ensures the image size stays appropriate on mobile */
+  }
+}
+
+
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+.services-text {
+  max-width: 800px;
+}
+
+.services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.services p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.services a button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.services a button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 2rem 0;
+    gap: 30px;
+  }
+
+  .services h1 {
+    font-size: 2rem; /* Slightly smaller heading */
+  }
+
+  .services p {
+    font-size: 0.9rem; /* Adjusted text size for mobile */
+  }
+
+  .services a button {
+    padding: 10px 15px;
+  }
+}
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 900px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-details {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.contact-details a {
+  color: #2F494A;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-info img {
+  flex: 1;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+
+  .contact-info img {
+    margin-top: 20px;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 100px;
+}
+
+.about-text {
+  max-width: 25%;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.about-image {
+  max-width: 50%;
+}
+
+.contact-info {
+  background-color: #f7f7f7;
+  padding: 70px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #6c757d;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 5rem 5rem;  /* Increased padding for more space around the footer */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer_logo {
+  margin-right: 30px;  /* Adds space between logo and nav */
+}
+
+.footer_logo img {
+  max-height: 150px;  /* Ensures the image doesn't exceed a height of 100px */
+  width: auto;  /* Maintains aspect ratio */
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-left: 20px;  /* Increased margin for spacing between links */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #708f70;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_logo img {
+    max-height: 80px;  /* Smaller image size on mobile */
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    padding-top: 15px;  /* Adds space above the links */
+    padding-bottom: 15px;
+  }
+
+  .footer-nav li {
+    margin-top: 15px;  /* Adds vertical space between links */
+  }
+}
+
